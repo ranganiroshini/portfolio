@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #E4E687;
+    margin-top: 80px;
+}
+.ima{
+    
+    margin: 2%;
+    margin-top: 30px;
+    height: 375px;
+    width: 375px;
+    background-image: url(../img/roshini_photo.jpeg);
+;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: white;
+    flex-shrink: 0;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.18);
+}
+.name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 8px;
+    margin: 8%;
+    margin-top: 10%; 
+    color: rgb(53, 53, 53);
+    font-size:60px;
+    margin-bottom: 4%;
+}
+
+.titles{
+    letter-spacing: 7px;
+    margin: 8%;
+    margin-top: 0.6%;
+    font-size:x-large;
+    margin-bottom: 4%;
+}
+
+.one{
+    margin: 8%;
+    margin-top: 0.6%;
+    letter-spacing: 3px;
+    font-size: large;
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+.resume{
+    margin-left: 8%;
+    margin-top: 0.6%;
+    padding: 5px;
+    border: 2px solid;
+    border-color: black;
+    width: 120px;
+    text-align: center;
+    transition: 0.8s;
+    border-radius: 4px;
+    background-color: lavender;
+    color: black;
+    font-size: 20px;
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+.resume:hover{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    transform:scale(1);
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+@media (max-width: 768px) {
+
+  .cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px;
+  }
+
+  .ima {
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .name {
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .titles {
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .one {
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .resume {
+    margin: 20px auto;
+  }
+
+}
+

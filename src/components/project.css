@@ -1,0 +1,174 @@
+/* ==============================
+   PROJECTS — MATCH REFERENCE
+============================== */
+
+/* FORCE project bullet text to NORMAL (NOT bold) */
+.project-desc li {
+  font-weight: 400 !important;
+  font-size: 15px;
+  line-height: 1.75;
+}
+.projects-header {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.projects-heading {
+  margin: 3% 3% 2%;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;   /* NOT too bold */
+  letter-spacing: 0.5px;
+}
+
+/* bullets NOT bold */
+.project-desc li {
+  font-weight: 400 !important;
+}
+
+
+/* GRID — WIDE CARDS */
+.projectCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  gap: 32px;
+  padding: 30px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.project {
+  border-radius: 14px;
+  padding: 24px 32px 30px;
+  color: #111;
+}
+
+.project {
+  border-radius: 14px;
+  padding: 24px 32px 30px;
+  color: #111;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  position: relative;
+}
+.projectCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+  gap: 36px;
+  padding: 30px 40px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.project {
+  align-self: start;
+}
+
+.project:hover {
+  transform: scale(1.05) translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+}
+.projectCard {
+  perspective: 1000px;
+}
+
+/* HEADER ROW (TITLE LEFT, ICONS RIGHT) */
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+/* TITLE — ONLY BOLD TEXT */
+.project-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 85%;
+}
+
+/* ICONS — TOP RIGHT */
+.project-links {
+  display: flex;
+  gap: 14px;
+  font-size: 18px;
+}
+
+.project-links a {
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: #000;
+  transform: translateY(-1px);
+}
+
+/* DESCRIPTION — NORMAL TEXT */
+.project-desc {
+  margin-left: 18px;
+  padding-left: 0;
+}
+
+.project-desc li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+/* TECH BADGES */
+.project-tech {
+  margin-top: 10px;
+}
+
+.project-tech img {
+  margin-right: 6px;
+  margin-top: 6px;
+}
+
+/* FORCE BODY TEXT NORMAL — FINAL FIX */
+.project-desc li,
+.project ul li {
+  font-weight: 400 !important;
+  font-size: 15px;
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+/* NOTHING except title should be bold */
+.project * {
+  font-weight: 400;
+}
+
+.project-title {
+  font-weight: 700;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE — PROJECTS
+================================ */
+
+@media (max-width: 768px) {
+
+  .projectCard {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .project {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-desc li {
+    font-size: 14px;
+  }
+
+}

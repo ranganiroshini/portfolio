@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+.header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: #E4E687;
+
+}
+.header .navbar{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    color: black;
+     font-family: Montserrat,Arial,serif,monospace;
+     font-weight: 500;
+    justify-content:space-between;
+    align-items: center;
+}
+.header-bg{ 
+    background-color: #E4E687;
+ }
+.ul-list{
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+.navitem{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+.navitem:hover{
+    color:  rgb(143, 64, 30);
+}
+/* Header name - same look as About / Skills */
+.about-title {
+  font-family: 'Poppins', sans-serif;  /* same font */
+  font-size: 22px;                     /* increase size here */
+  font-weight: 700;
+  margin-left: 20px;                   /* push from left edge */
+}
+
+@media (max-width: 768px) {
+   
+  .ul-list{
+    overflow-x: auto;
+   white-space: nowrap;
+}
+
+  .header {
+    height: 60px;
+  }
+
+  .header .navbar {
+    height: 60px;
+  }
+
+  .about-title {
+    font-size: 16px;
+  }
+
+  .navitem {
+    font-size: 10px;
+    margin: 3px;
+    padding: 4px;
+  }
+
+}

@@ -1,0 +1,72 @@
+.skills{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+    /* background-color: black; */
+} 
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 60px auto;
+    align-items: start;
+}
+
+
+.leftCard{
+    background-color: #EDE27A;   /* YELLOW BACK */
+    padding: 50px;
+    border-radius: 30px;
+    text-align: left;
+    font-weight: 400;
+    color: black;
+}
+
+.leftCard p{
+    font-size: 13pt;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 1.25rem;
+    color: black;
+}
+.leftCard p a u{
+    color: blueviolet;
+}
+
+.rightCard{
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding-top: 0px;
+   
+}
+.about-heading {
+  margin: 3%;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;   /* NOT bold */
+  letter-spacing: 1px;
+}
+
+
+@media (max-width: 768px) {
+
+  .card {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .leftCard {
+    padding: 20px;
+  }
+
+  .about-heading {
+    font-size: 28px;
+    text-align: center;
+  }
+
+}
+

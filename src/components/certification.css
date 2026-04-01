@@ -1,0 +1,341 @@
+/* ===============================
+   CERTIFICATIONS — STRUCTURE
+================================ */
+
+/* WHITE HEADER (LIKE HACKATHONS TITLE) */
+.cert-header {
+  background: #ffffff;
+  padding: 40px 60px 20px;
+}
+
+
+
+.cert-heading {
+  margin: 3% 3% 2%;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -10px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.5px;
+    margin-top: -40px;
+    margin-left: -30px; 
+     padding-top: -40px;
+  padding-bottom: -10px;
+}
+
+/* PEACH BACKGROUND (STARTS AFTER TITLE) */
+.cert-bg {
+  background: #E4E687;
+  padding: 20px 20px 20px 20px;
+  
+ 
+}
+
+/* TIMELINE WRAPPER */
+.cert-timeline {
+  max-width: 1200px;
+  margin: 0 auto; /* PULL UP (KEY FIX) */
+  position: relative;
+  padding-bottom: 0px;
+}
+
+/* CENTER LINE */
+.cert-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+
+/* ===============================
+   TIMELINE CARDS STRUCTURE
+================================ */
+
+/* Timeline Item */
+.cert-card {
+  position: relative;
+  width: 50%;
+  padding: 40px 40px;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE */
+.cert-card.left {
+  left: 0;
+  text-align: right;
+}
+
+/* RIGHT SIDE */
+.cert-card.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* CENTER LINE */
+.cert-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #ffffff;
+  transform: translateX(-50%);
+}
+
+.cert-star {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: #ff2d2d;   /* red star */
+  z-index: 10;
+  }
+
+/* DOT LEFT */
+.cert-card.left .cert-star {
+  top: 50px;
+  right: -21px;
+}
+
+/* DOT RIGHT */
+.cert-card.right .cert-star {
+  top: 55px;
+  left: -21px;
+}
+
+/* CARD CONTENT */
+.cert-content {
+  position: relative;
+  text-align: left;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  background: white;
+}
+
+/* ARROW CONNECTOR */
+.cert-card.left .cert-content::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -15px;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent;
+}
+
+.cert-card.right .cert-content::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: -15px;
+  transform: translateY(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+
+
+
+
+/* IMAGE */
+.cert-image {
+  width: 20%;
+  height: auto;
+  display: block;
+  margin: 15px auto 15px;
+  object-fit: contain;
+
+}
+
+/* TEXT */
+.cert-content h3 {
+  font-size: 20px;
+  margin-top: -10px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.cert-issuer {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.cert-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* LINK */
+.cert-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0077cc;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cert-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .cert-card,
+  .cert-card.left,
+  .cert-card.right {
+    width: 100%;
+    left: 0;
+  }
+
+  .cert-line {
+    left: 20px;
+  }
+}
+/* 1️⃣ Google */
+.cert-1 .cert-content {
+  background-color: #CBD8B6;
+}
+
+/* 2️⃣ Deloitte */
+.cert-2 .cert-content {
+  background-color: #D4B7AE;
+}
+
+/* 3️⃣ Meta */
+.cert-3 .cert-content {
+  background-color: #C8C3AE
+;
+}
+
+/* 4️⃣ Intel */
+.cert-4 .cert-content {
+  background-color: #D2D0C9
+;
+}
+/* GOOGLE */
+.cert-1.left .cert-content::after {
+  border-left-color: #ffffff;
+}
+.cert-1.right .cert-content::after {
+  border-right-color: #ffffff;
+}
+
+/* DELOITTE */
+.cert-2.left .cert-content::after {
+  border-left-color: #ffffff;
+}
+.cert-2.right .cert-content::after {
+  border-right-color: #ffffff;
+}
+
+/* META */
+.cert-3.left .cert-content::after {
+  border-left-color: #ffffff;
+}
+.cert-3.right .cert-content::after {
+  border-right-color: #fff;
+}
+
+/* INTEL */
+.cert-4.left .cert-content::after {
+  border-left-color: #ffffff;
+}
+.cert-4.right .cert-content::after {
+  border-right-color: #ffffff;
+}
+
+
+.cert-card {
+ opacity: 0;
+ transform: translateY(40px);
+ transition: all 0.8s ease;
+}
+.cert-content {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* LEFT cards */
+.cert-card.left .cert-content:hover {
+  transform: translateX(0px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  z-index: 5;
+}
+
+/* RIGHT cards */
+.cert-card.right .cert-content:hover {
+  transform: translateX(2px) scale(1.03);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+  z-index: 5;
+}
+
+.cert-card.show {
+ opacity: 1;
+ transform: translateX(0);
+}
+
+/* ===============================
+   STAR BLINK ANIMATION
+================================ */
+
+@keyframes starBlink {
+  0% {
+    opacity: 1;
+   
+  }
+  50% {
+    opacity: 0.4;
+  
+  }
+  100% {
+    opacity: 1;
+ 
+  }
+}
+.cert-card:hover .cert-star {
+  animation: starHover 0.6s infinite alternate;
+  transform: translateY(-50%) scale(1.3);
+}
+@keyframes starHover {
+  0% {
+    text-shadow: 0 0 5px #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff0000;
+  }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE — CERTIFICATIONS
+================================ */
+
+@media (max-width: 768px) {
+
+  .cert-card,
+  .cert-card.left,
+  .cert-card.right {
+    width: 100%;
+    left: 0;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .cert-line {
+    display: none;
+  }
+
+  .cert-star {
+    display: none;
+  }
+
+}
