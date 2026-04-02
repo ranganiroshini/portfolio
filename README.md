@@ -34,3 +34,7 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/ranganiroshini/portfolio.git
+
+## Acknowledgement
+
+This portfolio design was inspired by an existing open-source project and customized with my own content, projects, and improvements.
